@@ -19,7 +19,7 @@ function App() {
   }, []);
 
   return (
-    <div className="container">
+    <div className='container'>
       <h1>Sunglass Shop</h1>
     </div>
   );
