@@ -8,10 +8,12 @@
 }
 .header {
   background-color: #afac79;
-  margin: 1rem;
-  min-width: 1rem;
-  border: 0.3rem solid #fefffe;
+  border: 0.2rem solid #fefffe;
   border-radius: 3rem;
+  display: block;
+  margin: 2rem auto;
+  max-width: 80rem;
+  max-height: 10rem;
 }
 body {
   margin: 0;
@@ -29,14 +31,14 @@ body {
   max-width: 75rem;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.736);
+  display: block;
 }
 
-h1 {
-  color: #fff;
-  font-size: 2rem;
-  text-shadow: var(--shadow);
-  text-align: center;
-  margin: 1rem;
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 10rem;
 }
 
 img {
@@ -60,7 +62,7 @@ img {
   background: #fff;
   padding: 2rem;
   display: grid;
-  border-radius: var(--border-radius);
+  border-radius: 3rem;
   box-shadow: var(--shadow);
 }
 
@@ -68,15 +70,22 @@ img {
   height: 240px;
 }
 
-.product-grid-item button {
+.product-grid-item button,
+.backToTopButton {
   display: block;
   background: #fec401;
-  border-radius: var(--border-radius);
+  border-radius: 3rem;
   border: none;
   width: 100%;
   padding: 1rem;
   font-size: 1rem;
-  transition: 300ms background;
+  transition: background 0.8s;
+}
+.backToTopButton {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 
 .product-grid-item button:hover {
@@ -133,4 +142,18 @@ select {
   .product-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.product-grid-item button:hover,
+.backToTopButton:hover {
+  background: #247a48 radial-gradient(circle, transparent 1%, #17df67 1%)
+    center/15000%;
+  color: #fefffe;
+}
+
+.product-grid-item button:active,
+.backToTopButton:active {
+  background-color: #98dba9;
+  background-size: 100%;
+  transition: background 2s;
 }
