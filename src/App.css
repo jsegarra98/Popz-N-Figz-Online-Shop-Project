@@ -6,12 +6,21 @@
 * {
   box-sizing: border-box;
 }
-
+.header {
+  background-color: #afac79;
+  margin: 1rem;
+  min-width: 1rem;
+  border: 0.3rem solid #fefffe;
+  border-radius: 3rem;
+}
 body {
   margin: 0;
-  background: #5e472a
-    url(https://i.pinimg.com/564x/16/bd/80/16bd80a0da4d0ea7be102cad6028b33a.jpg)
-    center center;
+  background: url(https://i.pinimg.com/564x/85/af/ce/85afce5986b548323238efc698fd3e6d.jpg)
+    repeat center center fixed;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -19,14 +28,15 @@ body {
   padding: 2rem 1rem;
   max-width: 75rem;
   margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.736);
 }
 
 h1 {
   color: #fff;
-  font-size: 3rem;
+  font-size: 2rem;
   text-shadow: var(--shadow);
   text-align: center;
-  margin: 1rem 0 3rem;
+  margin: 1rem;
 }
 
 img {
@@ -113,9 +123,9 @@ select {
   }
 
   h1 {
-    font-size: 5rem;
-    line-height: 1;
-    margin: 3rem 0 5rem;
+    font-size: 4rem;
+    line-height: 1rem;
+    margin: 3rem;
   }
 }
 
