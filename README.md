@@ -29,5 +29,6 @@ Instructions upon opening this repository:
 
 ## Deployed Applications
 
--
--
+Popz N' Figz Online shop Render deploy:
+
+- https://react-online-shop-popz-n-figz.onrender.com
