@@ -2,7 +2,7 @@ import { React, useEffect, useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-// import FilterBy from "./components/FilterBy";
+import FilterBy from "./components/FilterBy";
 import SortBy from "./components/SortBy";
 import Products from "./components/Products";
 
@@ -29,13 +29,15 @@ function App() {
         <Header />
       </div>
       <div className='toolbar'>
-        <div className='filterBy'>
-          {/* <FilterBy setFilterBy={FilterBy} /> */}
+        <div className='filters'>
+          <FilterBy setFilterBy={() => setProducts(products)} />
           <SortBy setSortBy={() => setProducts(products)} />
         </div>
-        <Products products={products} />
       </div>
-      <Footer />
+      <Products products={products} />
+      <div className='footer'>
+        <Footer />
+      </div>
     </div>
   );
 }
